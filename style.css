@@ -1,0 +1,66 @@
+body{
+    overflow: hidden;  /*avoids vertical scroll bar*/
+    background:linear-gradient(white, rgba(0, 0, 0, 0.562));
+    /* background-color: black; */
+}
+.container{
+    border: 1px solid black;
+    width: 95%;
+    height: 100vh;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.calculator{
+    border: 1px solid black;
+    width: 370px;
+    margin: auto;
+    border-radius: 2px;
+    background: rgb(236, 230, 230);
+    padding: 15px 20px;
+    box-shadow: 0px 2px 4px 0px rgb(39, 40, 41);
+}
+#userinput{
+    box-sizing: border-box;
+    width: 100%;
+    padding: 40px 5px;
+    background: whitesmoke;
+    text-align: right;
+    direction: ltr;    /*stores the number from left to right if ltr is used ex: press 6 and then press 3 the data input will be 36 withoug ltr*/
+    outline: none;
+    border: none;
+}
+.btn{
+    width: 24%;
+    height: 45px;
+    border-radius: 1px;
+    outline: none;
+    border: none;
+    margin-top: 3px;
+    background: whitesmoke;
+}
+.btnequal{
+    width: 99.2%;
+    height: 45px;
+    border-radius: 1px;
+    outline: none;
+    border: none;
+    margin-top: 3px;
+    background: whitesmoke;
+}
+.btn:hover, .btnequal:hover{
+    background-color: rgba(68, 67, 67, 0.301);
+}
+@media(max-width:480px){
+    .btn{
+        width: 23.4%;
+
+    }
+}
+@media(max-width:320px){
+    .btn{
+        width: 23%;
+
+    }
+}
